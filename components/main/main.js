@@ -1,50 +1,44 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import {
-  useTransition,
   useSpring,
-  useChain,
-  config,
   animated,
+  useChain,
   useSpringRef,
-} from "@react-spring/web";
+  useTransition,
+  config,
+} from "react-spring";
 import classes from "./main.module.scss";
 
 function Main() {
-  const [open, setOpen] = useState(false);
+  const [isEntered, setIsEntered] = useState(false);
 
-  const springApi = useSpringRef();
-  const { size, ...rest } = useSpring({
-    ref: springApi,
+  const transition = useTransition(!isEntered, {
+    enter: { opacity: 1, width: "50%", height: "25%" },
+    leave: { opacity: 0, width: "100%", height: "100%" },
     config: config.stiff,
-    from: { size: "20%", background: "hotpink" },
-    to: {
-      size: open ? "100%" : "20%",
-      background: open ? "white" : "hotpink",
-    },
   });
-
-  const transApi = useSpringRef();
-  const transition = useTransition(open ? data : [], {
-    ref: transApi,
-    trail: 400 / data.length,
-    from: { opacity: 0, scale: 0 },
-    enter: { opacity: 1, scale: 1 },
-    leave: { opacity: 0, scale: 0 },
-  });
-
-  useChain(open ? [springApi, transApi] : [transApi, springApi], [
-    0,
-    open ? 0.1 : 0.6,
-  ]);
 
   return (
     <main className={classes.main}>
       <div className={classes.wrapper}>
+        {transition(
+          (styles, item) =>
+            item && (
+              <animated.div
+                className={classes.enter}
+                style={styles}
+                onClick={() => {
+                  setIsEntered(!isEntered);
+                }}
+              >
+                Click to enter
+              </animated.div>
+            )
+        )}
+
         <div className={classes.container}>
           <div className={`${classes.box} ${classes.contact}`}></div>
-          <div className={`${classes.box} ${classes.about}`}>
-            {/* <img src="./images/about.jpg" alt="about me" /> */}
-          </div>
+          <div className={`${classes.box} ${classes.about}`}></div>
           <div className={`${classes.box} ${classes.portfolio}`}>3</div>
         </div>
       </div>
