@@ -1,8 +1,11 @@
+import { Fragment } from "react";
+import Navigation from "../components/navigation/navigation";
+
 function Portfolio() {
   return (
-    <div>
-      <h1>Portfolio</h1>
-    </div>
+    <Fragment>
+      <Navigation />
+    </Fragment>
   );
 }
 

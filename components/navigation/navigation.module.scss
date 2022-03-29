@@ -67,5 +67,13 @@
 
   .list {
     list-style-type: none;
+    transition: background-color 0.6s;
+
+    .listItem {
+      &:hover {
+        cursor: pointer;
+        background-color: #e5143c;
+      }
+    }
   }
 }
