@@ -13,24 +13,29 @@ function Main() {
         animate={
           isEntered
             ? {
-                width: "98%",
-                height: "98%",
-                borderRadius: "0.5%",
+                width: "100%",
+                height: "100%",
+                borderRadius: "0%",
                 x: 0,
                 y: 0,
 
-                background: "#FBF9FD",
+                background: "#231F20",
+                cursor: "default",
               }
             : { y: [20, -20, -20, 20], opacity: 1 }
         }
         transition={
           isEntered
-            ? { duration: 0.6, ease: "easeInOut" }
+            ? { duration: 0.4 }
             : { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
         }
-        onClick={() => {
-          setIsEntered(!isEntered);
-        }}
+        onClick={
+          isEntered
+            ? () => {}
+            : () => {
+                setIsEntered(!isEntered);
+              }
+        }
       >
         <AnimatePresence>
           {isEntered ? (
@@ -47,7 +52,7 @@ function Main() {
         </AnimatePresence>
         {isEntered ? <Cards /> : ""}
       </motion.div>
-      {isEntered ? <div className={classes.overlay}></div> : ""}
+      {/* {isEntered ? <div className={classes.overlay}></div> : ""} */}
     </div>
   );
 }
