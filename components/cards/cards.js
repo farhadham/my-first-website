@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import classes from "./cards.module.scss";
+import Link from "next/link";
 
 const variants = {
   contact: { scale: [0.2, 0.2, 0.2, 1], x: [-1000, 0, 0, 0] },
@@ -18,14 +19,20 @@ function Cards() {
           animate={"contact"}
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <motion.h1
-            animate={{ opacity: 1, transition: { duration: 0.7, delay: 1.5 } }}
-            initial={{ opacity: 0 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            CONTACT
-          </motion.h1>
+          <Link href="./contact">
+            <motion.h1
+              animate={{
+                opacity: 1,
+                transition: { duration: 0.7, delay: 1.5 },
+              }}
+              initial={{ opacity: 0 }}
+              whileHover={{ scale: 1.05, backgroundColor: "#e9e9e969" }}
+              whileTap={{ scale: 0.95 }}
+            >
+              CONTACT
+            </motion.h1>
+          </Link>
+
           <motion.div
             className={`${classes.contact}`}
             whileHover={{ scale: 1.1 }}
@@ -42,14 +49,20 @@ function Cards() {
           animate={"about"}
           transition={{ delay: 0.7, duration: 1 }}
         >
-          <motion.h1
-            animate={{ opacity: 1, transition: { duration: 0.7, delay: 1.7 } }}
-            initial={{ opacity: 0 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            ABOUT ME
-          </motion.h1>
+          <Link href="./about">
+            <motion.h1
+              animate={{
+                opacity: 1,
+                transition: { duration: 0.7, delay: 1.7 },
+              }}
+              initial={{ opacity: 0 }}
+              whileHover={{ scale: 1.05, backgroundColor: "#e9e9e969" }}
+              whileTap={{ scale: 0.95 }}
+            >
+              ABOUT ME
+            </motion.h1>
+          </Link>
+
           <motion.div
             className={`${classes.about}`}
             whileHover={{ scale: 1.1 }}
@@ -66,14 +79,20 @@ function Cards() {
           animate={"portfolio"}
           transition={{ delay: 0.9, duration: 1 }}
         >
-          <motion.h1
-            animate={{ opacity: 1, transition: { duration: 0.7, delay: 1.9 } }}
-            initial={{ opacity: 0 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            PORTFOLIO
-          </motion.h1>
+          <Link href="./portfolio">
+            <motion.h1
+              animate={{
+                opacity: 1,
+                transition: { duration: 0.7, delay: 1.9 },
+              }}
+              initial={{ opacity: 0 }}
+              whileHover={{ scale: 1.05, backgroundColor: "#e9e9e969" }}
+              whileTap={{ scale: 0.95, backgroundColor: "#e9e9e922" }}
+            >
+              PORTFOLIO
+            </motion.h1>
+          </Link>
+
           <motion.div
             className={`${classes.portfolio}`}
             whileHover={{ scale: 1.1 }}
