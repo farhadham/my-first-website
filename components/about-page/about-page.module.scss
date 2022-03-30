@@ -3,59 +3,29 @@
 
   .semiFather {
     width: 100vw;
-    height: 500vh;
-    background: linear-gradient(180deg, #000000, #e5143c);
-
-    .wrapper {
-      width: 100%;
-      height: 100vh;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .container1 {
-        width: 100%;
-        height: 75%;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-
-        h1 {
-          color: white;
-          font-size: 7rem;
-          font-weight: 700;
-          @media screen and (max-width: 1325px) {
-            font-size: 5rem;
-          }
-        }
-
-        .myImage {
-          background: url(../../public/images/farhad.jpg);
-          width: 300px;
-          height: 300px;
-          border-radius: 50%;
-          background-position-x: 7px;
-          background-size: cover;
-        }
-
-        h2 {
-          color: white;
-          font-size: 4rem;
-          font-family: "Lora", serif;
-          font-weight: normal;
-          @media screen and (max-width: 1325px) {
-            font-size: 3.55rem;
-          }
-        }
-      }
-    }
+    height: 800vh;
+    background: #231557;
+    background: -moz-linear-gradient(
+      165deg,
+      #000000 0%,
+      #5a5758 33.33%,
+      #e5143c 66.66%,
+      #550510 100%
+    );
+    background: -webkit-linear-gradient(
+      165deg,
+      #000000 0%,
+      #5a5758 33.33%,
+      #e5143c 66.66%,
+      #550510 100%
+    );
+    background: linear-gradient(
+      165deg,
+      #000000 0%,
+      #5a5758 33.33%,
+      #e5143c 66.66%,
+      #550510 100%
+    );
   }
 }
 

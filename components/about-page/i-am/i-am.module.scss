@@ -1,0 +1,69 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    background: url("../../../public/images/iam.jpg");
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+  .container1 {
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    h1 {
+      color: white;
+      font-size: 7rem;
+      font-weight: 700;
+      @media screen and (max-width: 1325px) {
+        font-size: 4.6rem;
+        line-height: 4.6rem;
+      }
+      @media screen and (max-width: 375px) {
+        font-size: 4rem;
+      }
+    }
+
+    .myImage {
+      background: url(../../../public/images/farhad.jpg);
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-position-x: 7px;
+      background-size: cover;
+    }
+
+    h2 {
+      color: white;
+      font-size: 4rem;
+      font-family: "Hind Madurai", sans-serif;
+      font-weight: normal;
+      @media screen and (max-width: 1325px) {
+        font-size: 3.55rem;
+      }
+      @media screen and (max-width: 804px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 375px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
