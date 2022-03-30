@@ -16,10 +16,10 @@
     padding: 0 3rem;
     font-weight: 300;
     border: solid 3px;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1325px) {
       font-size: 150%;
     }
-    @media screen and (max-width: 940px) {
+    @media screen and (max-width: 1073px) {
       font-size: 100%;
     }
   }
@@ -36,7 +36,7 @@
     @media screen and (max-width: 770px) {
       box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 10px;
     }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 480px) {
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     display: flex;
