@@ -1,0 +1,32 @@
+.container {
+  width: 60%;
+  height: 50vh;
+  background-color: aqua;
+  position: absolute;
+  display: flex;
+  top: 15vh;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+
+    .name {
+      width: 100%;
+      font-size: 4vh;
+    }
+    .email {
+      width: 100%;
+      font-size: 4vh;
+    }
+
+    textarea {
+      width: 100%;
+      font-size: 4vh;
+    }
+  }
+}

@@ -5,7 +5,7 @@ function Music() {
   const { scrollYProgress } = useViewportScroll();
   const opacity1 = useTransform(
     scrollYProgress,
-    [0, 0.1, 0.2, 0.3, 0.5, 0.6, 0.65, 0.75],
+    [0, 0.1, 0.2, 0.3, 0.5, 0.6, 0.7, 0.8],
     [0, 0, 0, 0, 0, 1, 1, 0]
   );
   const opacity2 = useTransform(
