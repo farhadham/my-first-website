@@ -1,32 +1,108 @@
 .container {
   width: 60%;
-  height: 50vh;
-  background-color: aqua;
+  height: 45vh;
+
   position: absolute;
   display: flex;
   top: 15vh;
   @media screen and (max-width: 480px) {
     width: 100%;
   }
-
   form {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 
-    .name {
-      width: 100%;
-      font-size: 4vh;
-    }
-    .email {
-      width: 100%;
-      font-size: 4vh;
-    }
+    flex-direction: column;
+    border-radius: 10px;
+
+    width: 100%;
 
     textarea {
       width: 100%;
-      font-size: 4vh;
+      padding: 7px 7px;
+      font-size: 3vh;
+      outline: none;
+      border-radius: inherit;
+      font-family: "Hind Madurai", sans-serif;
+      border-style: none;
+      height: 30vh;
+      margin-bottom: 0.7vh;
+    }
+
+    button {
+      font-size: 3vh;
+      padding: 1vh 0;
+      border-radius: inherit;
+      border-style: none;
+      outline: none;
+      color: white;
+      background-color: #231f20;
+      width: 50%;
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .nameEmail {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      //   @media screen and (max-width: 480px) {
+      //     flex-direction: column;
+      //   }
+
+      .name {
+        padding: 1vh;
+        width: 49%;
+        font-size: 3vh;
+        border-style: none;
+        font-family: "Hind Madurai", sans-serif;
+        outline: none;
+        border-radius: 10px;
+        margin-bottom: 0.7vh;
+        &:invalid {
+          border: 3px solid #aa0e2a;
+        }
+        &:required {
+          border: none;
+        }
+        @media screen and (max-width: 480px) {
+          width: 100%;
+        }
+      }
+      .email {
+        padding: 1vh;
+        width: 49%;
+        font-size: 3vh;
+        border-radius: 10px;
+        font-family: "Hind Madurai", sans-serif;
+        border-style: none;
+        outline: none;
+        margin-bottom: 0.7vh;
+        &:invalid {
+          border: 3px solid #aa0e2a;
+        }
+        &:required {
+          border: none;
+        }
+        @media screen and (max-width: 480px) {
+          width: 100%;
+        }
+      }
     }
   }
 }
+
+// font-family: 'Hind Madurai', sans-serif;
+// font weight 300
+
+// font-family: 'Lora', serif;
+// font weitght normal
+
+// font-family: 'Montserrat', sans-serif;

@@ -6,40 +6,6 @@
   position: fixed;
   z-index: 100;
 
-  .toggle {
-    position: fixed;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    right: 15px;
-    top: 15px;
-    background-color: #e9e9e9;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    .lines {
-      z-index: 100;
-      height: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-
-      .line {
-        width: 35px;
-        border-radius: 20%;
-        height: 5px;
-        background-color: #231f20;
-      }
-    }
-  }
-
   .fakeBackground {
     position: absolute;
     z-index: 1;
@@ -75,6 +41,40 @@
         cursor: pointer;
         background-color: #e5143c;
       }
+    }
+  }
+}
+
+.toggle {
+  position: fixed;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  right: 15px;
+  top: 15px;
+  background-color: #e9e9e9;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .lines {
+    z-index: 100;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .line {
+      width: 35px;
+      border-radius: 20%;
+      height: 5px;
+      background-color: #231f20;
     }
   }
 }
