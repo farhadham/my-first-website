@@ -28,11 +28,15 @@
       border-style: none;
       height: 30vh;
       margin-bottom: 0.7vh;
+      @media screen and (max-width: 480px) {
+        width: 98%;
+      }
     }
 
     button {
       font-size: 3vh;
-      padding: 1vh 0;
+
+      padding: 1.4vh 0;
       border-radius: inherit;
       border-style: none;
       outline: none;
@@ -40,7 +44,7 @@
       background-color: #231f20;
       width: 50%;
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 99%;
       }
       &:hover {
         cursor: pointer;
@@ -66,14 +70,10 @@
         outline: none;
         border-radius: 10px;
         margin-bottom: 0.7vh;
-        &:invalid {
-          border: 3px solid #aa0e2a;
-        }
-        &:required {
-          border: none;
-        }
         @media screen and (max-width: 480px) {
           width: 100%;
+          margin-left: 0.5vh;
+          margin-right: 0.5vh;
         }
       }
       .email {
@@ -85,14 +85,11 @@
         border-style: none;
         outline: none;
         margin-bottom: 0.7vh;
-        &:invalid {
-          border: 3px solid #aa0e2a;
-        }
-        &:required {
-          border: none;
-        }
+
         @media screen and (max-width: 480px) {
           width: 100%;
+          margin-left: 0.5vh;
+          margin-right: 0.5vh;
         }
       }
     }

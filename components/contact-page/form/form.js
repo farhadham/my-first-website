@@ -4,7 +4,12 @@ import { motion } from "framer-motion";
 
 function Form() {
   return (
-    <div className={classes.container}>
+    <motion.div
+      className={classes.container}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      transition={{ duration: 0.5, delay: 0.7 }}
+    >
       <form action="https://formsubmit.co/farhadham2@gmail.com" method="POST">
         <div className={classes.nameEmail}>
           <motion.input
@@ -32,6 +37,7 @@ function Form() {
           rows="4"
           placeholder="Your Message"
           name="text"
+          required
           whileFocus={{ backgroundColor: "#5A5758", color: "#ffffff" }}
         ></motion.textarea>
         <motion.button
@@ -43,7 +49,7 @@ function Form() {
           Submit
         </motion.button>
       </form>
-    </div>
+    </motion.div>
   );
 }
 
