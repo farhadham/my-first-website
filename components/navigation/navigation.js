@@ -46,7 +46,7 @@ function Navigation() {
               animate={{
                 scale: 30,
               }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.5 }}
               exit={{ scale: 1 }}
             ></motion.div>
             )
@@ -59,7 +59,7 @@ function Navigation() {
                     className={classes.listItem}
                     animate={{ opacity: 1 }}
                     initial={{ opacity: 0 }}
-                    transition={{ duration: 0.4, delay: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
                   >
                     Contact
                   </motion.li>
@@ -69,7 +69,7 @@ function Navigation() {
                     className={classes.listItem}
                     animate={{ opacity: 1 }}
                     initial={{ opacity: 0 }}
-                    transition={{ duration: 0.4, delay: 0.4 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
                   >
                     About
                   </motion.li>
@@ -79,7 +79,7 @@ function Navigation() {
                     className={classes.listItem}
                     animate={{ opacity: 1 }}
                     initial={{ opacity: 0 }}
-                    transition={{ duration: 0.4, delay: 0.6 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
                   >
                     Portfolio
                   </motion.li>
@@ -89,7 +89,7 @@ function Navigation() {
                     className={classes.listItem}
                     animate={{ opacity: 1 }}
                     initial={{ opacity: 0 }}
-                    transition={{ duration: 0.4, delay: 0.8 }}
+                    transition={{ duration: 0.5, delay: 0.8 }}
                   >
                     Homepage
                   </motion.li>

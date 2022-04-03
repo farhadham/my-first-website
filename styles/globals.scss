@@ -30,3 +30,10 @@ a {
   // position: absolute;
   // transform: translateY(100px);
 }
+
+.swiper-slide,
+.swiper-slide-active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

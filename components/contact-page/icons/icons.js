@@ -16,7 +16,6 @@ function Icons() {
           rel="noopener noreferrer"
         >
           <motion.div
-            onclick="window.location='http://google.com';"
             className={classes.linkedin}
             whileHover={{ scale: 1.05 }}
           ></motion.div>

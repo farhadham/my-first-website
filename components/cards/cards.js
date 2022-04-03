@@ -13,96 +13,90 @@ function Cards() {
   return (
     <Fragment>
       <div className={classes.container}>
-        <motion.div
-          className={classes.cardContainer}
-          variants={variants}
-          animate={"contact"}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          <Link href="./contact">
+        <Link href="./contact">
+          <motion.div
+            className={classes.cardContainer}
+            variants={variants}
+            animate={"contact"}
+            transition={{ delay: 0.5, duration: 1 }}
+          >
             <motion.h1
               animate={{
                 opacity: 1,
                 transition: { duration: 0.7, delay: 1.5 },
               }}
               initial={{ opacity: 0 }}
-              whileHover={{ scale: 1.05, backgroundColor: "#e9e9e969" }}
-              whileTap={{ scale: 0.95 }}
             >
               CONTACT
             </motion.h1>
-          </Link>
 
-          <motion.div
-            className={`${classes.contact}`}
-            whileHover={{ scale: 1.1 }}
-          >
             <motion.div
-              className={`${classes.contactColor}`}
-              whileHover={{ backgroundColor: "#AA0E2A80" }}
-            ></motion.div>
+              className={`${classes.contact}`}
+              whileHover={{ scale: 1.1 }}
+            >
+              <motion.div
+                className={`${classes.contactColor}`}
+                whileHover={{ backgroundColor: "#55051080" }}
+              ></motion.div>
+            </motion.div>
           </motion.div>
-        </motion.div>
-        <motion.div
-          className={classes.cardContainer}
-          variants={variants}
-          animate={"about"}
-          transition={{ delay: 0.7, duration: 1 }}
-        >
-          <Link href="./about">
+        </Link>
+        <Link href="./about">
+          <motion.div
+            className={classes.cardContainer}
+            variants={variants}
+            animate={"about"}
+            transition={{ delay: 0.7, duration: 1 }}
+          >
             <motion.h1
               animate={{
                 opacity: 1,
                 transition: { duration: 0.7, delay: 1.7 },
               }}
               initial={{ opacity: 0 }}
-              whileHover={{ scale: 1.05, backgroundColor: "#e9e9e969" }}
-              whileTap={{ scale: 0.95 }}
             >
               ABOUT ME
             </motion.h1>
-          </Link>
 
-          <motion.div
-            className={`${classes.about}`}
-            whileHover={{ scale: 1.1 }}
-          >
             <motion.div
-              className={`${classes.aboutColor}`}
-              whileHover={{ backgroundColor: "#55051080" }}
-            ></motion.div>
+              className={`${classes.about}`}
+              whileHover={{ scale: 1.1 }}
+            >
+              <motion.div
+                className={`${classes.aboutColor}`}
+                whileHover={{ backgroundColor: "#55051080" }}
+              ></motion.div>
+            </motion.div>
           </motion.div>
-        </motion.div>
-        <motion.div
-          className={classes.cardContainer}
-          variants={variants}
-          animate={"portfolio"}
-          transition={{ delay: 0.9, duration: 1 }}
-        >
-          <Link href="./portfolio">
+        </Link>
+        <Link href="./portfolio">
+          <motion.div
+            className={classes.cardContainer}
+            variants={variants}
+            animate={"portfolio"}
+            transition={{ delay: 0.9, duration: 1 }}
+          >
             <motion.h1
               animate={{
                 opacity: 1,
                 transition: { duration: 0.7, delay: 1.9 },
               }}
               initial={{ opacity: 0 }}
-              whileHover={{ scale: 1.05, backgroundColor: "#e9e9e969" }}
-              whileTap={{ scale: 0.95, backgroundColor: "#e9e9e922" }}
             >
               PORTFOLIO
             </motion.h1>
-          </Link>
 
-          <motion.div
-            className={`${classes.portfolio}`}
-            whileHover={{ scale: 1.1 }}
-          >
             <motion.div
-              className={`${classes.portfolioColor}`}
-              whileHover={{ backgroundColor: "#6B081680" }}
-            ></motion.div>
+              className={`${classes.portfolio}`}
+              whileHover={{ scale: 1.1 }}
+            >
+              <motion.div
+                className={`${classes.portfolioColor}`}
+                whileHover={{ backgroundColor: "#55051080" }}
+              ></motion.div>
+            </motion.div>
           </motion.div>
-        </motion.div>
+        </Link>
       </div>
     </Fragment>
   );

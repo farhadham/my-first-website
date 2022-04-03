@@ -32,12 +32,13 @@
       color: white;
       font-size: 7rem;
       font-weight: 700;
+      text-align: center;
       @media screen and (max-width: 1325px) {
         font-size: 4.6rem;
         line-height: 4.6rem;
       }
       @media screen and (max-width: 375px) {
-        font-size: 4rem;
+        font-size: 3.5rem;
       }
     }
 
@@ -48,6 +49,10 @@
       border-radius: 50%;
       background-position-x: 7px;
       background-size: cover;
+      @media screen and (max-width: 480px) {
+        width: 200px;
+        height: 200px;
+      }
     }
 
     h2 {
@@ -55,6 +60,7 @@
       font-size: 4rem;
       font-family: "Hind Madurai", sans-serif;
       font-weight: normal;
+      text-align: center;
       @media screen and (max-width: 1325px) {
         font-size: 3.55rem;
       }

@@ -4,7 +4,7 @@ import classes from "./main.module.scss";
 import Cards from "../cards/cards";
 
 function Main() {
-  const [isEntered, setIsEntered] = useState(false);
+  const [isEntered, setIsEntered] = useState(true);
 
   return (
     <div className={classes.main}>
@@ -26,7 +26,7 @@ function Main() {
         }
         transition={
           isEntered
-            ? { duration: 0.4 }
+            ? { duration: 0 }
             : { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
         }
         onClick={

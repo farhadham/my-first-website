@@ -1,20 +1,15 @@
-.videoContainer {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 100%;
-  margin: 0 50px;
-  @media screen and (max-width: 913px) {
-    margin: 0;
-  }
-  iframe {
-    position: absolute;
+.imgContainer {
+  width: 60vh;
+  height: 60vh;
+  border-radius: 50px;
 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  @media screen and (max-width: 913px) {
+    width: 60vw;
+    height: 60vw;
   }
-  p {
-    display: none;
+  img {
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
   }
 }
