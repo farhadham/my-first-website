@@ -7,7 +7,7 @@ function Cards() {
   return (
     <Fragment>
       <div className={classes.container}>
-        <Link href="./contact">
+        <Link href="./contact" passHref>
           <motion.div
             className={classes.cardContainer}
             animate={{ opacity: 1 }}
@@ -35,7 +35,7 @@ function Cards() {
             </motion.div>
           </motion.div>
         </Link>
-        <Link href="./about">
+        <Link href="./about" passHref>
           <motion.div
             className={classes.cardContainer}
             animate={{ opacity: 1 }}
@@ -63,7 +63,7 @@ function Cards() {
             </motion.div>
           </motion.div>
         </Link>
-        <Link href="./portfolio">
+        <Link href="./portfolio" passHref>
           <motion.div
             className={classes.cardContainer}
             animate={{ opacity: 1 }}

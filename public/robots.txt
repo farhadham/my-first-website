@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.farhadf.com
+
+# Sitemaps
+Sitemap: https://www.farhadf.com/sitemap.xml

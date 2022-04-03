@@ -54,7 +54,7 @@ function Navigation() {
           <div className={classes.listContainer}>
             {navIsToggled && (
               <ul className={classes.list}>
-                <Link href="./contact">
+                <Link href="./contact" passHref>
                   <motion.li
                     className={classes.listItem}
                     animate={{ opacity: 1 }}
@@ -64,7 +64,7 @@ function Navigation() {
                     Contact
                   </motion.li>
                 </Link>
-                <Link href="./about">
+                <Link href="./about" passHref>
                   <motion.li
                     className={classes.listItem}
                     animate={{ opacity: 1 }}
@@ -74,7 +74,7 @@ function Navigation() {
                     About
                   </motion.li>
                 </Link>
-                <Link href="./portfolio">
+                <Link href="./portfolio" passHref>
                   <motion.li
                     className={classes.listItem}
                     animate={{ opacity: 1 }}
@@ -84,7 +84,7 @@ function Navigation() {
                     Portfolio
                   </motion.li>
                 </Link>
-                <Link href="./">
+                <Link href="./" passHref>
                   <motion.li
                     className={classes.listItem}
                     animate={{ opacity: 1 }}
