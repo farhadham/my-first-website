@@ -60,7 +60,7 @@ function IAM() {
           variants={h3Variant}
         ></motion.div>
         <motion.h2 initial="hidden" animate="visible" variants={h2Variant}>
-          I&quot;'&quot;m a self-educated Music Producer & Web Developer
+          I&apos;m a self-educated Music Producer & Web Developer
         </motion.h2>
       </motion.div>
       <motion.div

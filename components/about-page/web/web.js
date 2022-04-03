@@ -42,7 +42,7 @@ function Web() {
         </motion.h2>
         <motion.p style={{ opacity: opacity3, x: x1 }}>
           I started learning HTML, CSS, and JS and then transitioned to React.
-          This is my first personal website which I&quot;'&quot;ve designed from
+          This is my first personal website which I&apos;ve designed from
           scratch. Coding is my favorite hobby and primary goal in my career.
         </motion.p>
       </motion.div>
