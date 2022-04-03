@@ -41,9 +41,9 @@ function Graduate() {
           In 2017 with BSc in Civil Engineering
         </motion.h2>
         <motion.p style={{ opacity: opacity3, x: x1 }}>
-          I scored in the top 2% on my university exam and graduated with "A"
-          and then I started exploring the non-existent job opportunities in my
-          country
+          I scored in the top 2% on my university exam and graduated with
+          &quot;A&quot; and then I started exploring the non-existent job
+          opportunities in my country
         </motion.p>
       </motion.div>
       <motion.div
