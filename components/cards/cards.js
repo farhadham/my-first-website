@@ -3,12 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import classes from "./cards.module.scss";
 import Link from "next/link";
 
-const variants = {
-  contact: { scale: [0.2, 0.2, 0.2, 1], x: [-1000, 0, 0, 0] },
-  about: { scale: [0.2, 0.2, 0.2, 1], x: [-1500, 0, 0, 0] },
-  portfolio: { scale: [0.2, 0.2, 0.2, 1], x: [-2000, 0, 0, 0] },
-};
-
 function Cards() {
   return (
     <Fragment>
@@ -16,14 +10,14 @@ function Cards() {
         <Link href="./contact">
           <motion.div
             className={classes.cardContainer}
-            variants={variants}
-            animate={"contact"}
-            transition={{ delay: 0.5, duration: 1 }}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0, duration: 1 }}
           >
             <motion.h1
               animate={{
                 opacity: 1,
-                transition: { duration: 0.7, delay: 1.5 },
+                transition: { duration: 0.7, delay: 0.3 },
               }}
               initial={{ opacity: 0 }}
             >
@@ -44,14 +38,14 @@ function Cards() {
         <Link href="./about">
           <motion.div
             className={classes.cardContainer}
-            variants={variants}
-            animate={"about"}
-            transition={{ delay: 0.7, duration: 1 }}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.3, duration: 1 }}
           >
             <motion.h1
               animate={{
                 opacity: 1,
-                transition: { duration: 0.7, delay: 1.7 },
+                transition: { duration: 0.7, delay: 0.6 },
               }}
               initial={{ opacity: 0 }}
             >
@@ -72,14 +66,14 @@ function Cards() {
         <Link href="./portfolio">
           <motion.div
             className={classes.cardContainer}
-            variants={variants}
-            animate={"portfolio"}
-            transition={{ delay: 0.9, duration: 1 }}
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ delay: 0.6, duration: 1 }}
           >
             <motion.h1
               animate={{
                 opacity: 1,
-                transition: { duration: 0.7, delay: 1.9 },
+                transition: { duration: 0.7, delay: 0.9 },
               }}
               initial={{ opacity: 0 }}
             >

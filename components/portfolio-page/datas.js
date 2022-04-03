@@ -7,6 +7,7 @@ const Datas = [
       "A short film published by NHL Stenden University which I had the pleasure to work alongside Jelle as the composer. The theme was Christmas, so I indicated a cheerful melody to the song.",
     link: "https://www.facebook.com/nhlstenden/videos/475244907279750",
     logo: "./images/logos/nhl.jpg",
+    alt: "NHL stenden",
   },
   {
     id: 1,
@@ -16,6 +17,7 @@ const Datas = [
       "A trailer published by Eventopeople production which I had the pleasure to work as the composer. The theme was dance festival, so I indicated an EDM arrangement",
     link: "https://www.instagram.com/p/CW_P0o0KwTN/",
     logo: "./images/logos/event.jpg",
+    alt: "eventopeople production",
   },
   {
     id: 2,
@@ -25,6 +27,7 @@ const Datas = [
       "A short film published by Rowing Club Bern in which I had the pleasure to work alongside Terence du Fresne as the composer. The theme was Epic, so I indicated Orchestra to the song.",
     link: "https://www.instagram.com/p/CWk5tF6oJZv/",
     logo: "./images/logos/rowing.jpg",
+    alt: "rowing club bern",
   },
   {
     id: 3,
@@ -34,6 +37,7 @@ const Datas = [
       "A game published by Crypto Cavemen Club which I had the pleasure to work as the composer for the Trailer. The theme was Ethnic and Fun, so I indicated a Joyful melody to the song.",
     link: "https://youtu.be/GqBwmTAkXlQ",
     logo: "./images/logos/cave.jpg",
+    alt: "caveworld nft",
   },
   {
     id: 4,
@@ -43,6 +47,7 @@ const Datas = [
       "Music Composed for Airmango project - travelers changing the world. All rights reserved",
     link: "https://youtu.be/-Fn7go2mnSE",
     logo: "./images/logos/airmango.png",
+    alt: "Airmaino",
   },
   {
     id: 5,
@@ -52,6 +57,7 @@ const Datas = [
       "A Trailer for the game called The Chickens which I had the pleasure to work as the composer. The theme was Epic, so I indicated Brass & orchestra to the song.",
     link: "https://youtu.be/ThmIiYv09gk",
     logo: "./images/logos/chicken.jpg",
+    alt: "Chickenz game",
   },
   {
     id: 6,
@@ -61,6 +67,7 @@ const Datas = [
       "Idle Farmyard A Mobile game published by Hypertonic Games in which I had the pleasure to work as the composer. The theme was Farming, so I indicated a cheerful melody with an acoustic guitar.",
     link: "https://youtu.be/_wHuTdgQmcU",
     logo: "./images/logos/farm.png",
+    alt: "Idle Farmyard",
   },
 ];
 

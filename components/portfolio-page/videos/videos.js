@@ -30,7 +30,7 @@ function Videos() {
           <SwiperSlide key={el.id}>
             <a href={el.link} target="_blank" rel="noopener noreferrer">
               <div className={classes.imgContainer}>
-                <img src={el.logo} />
+                <img src={el.logo} alt={el.alt} />
               </div>
             </a>
           </SwiperSlide>

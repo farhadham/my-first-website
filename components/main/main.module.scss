@@ -1,46 +1,26 @@
-.main {
+.container {
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(to right bottom, #000000, #231f20);
+  // text-align: center;
   width: 100vw;
   height: 100vh;
+
+  font-family: "Montserrat", helvetica, arial, sans-serif;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: relative;
 
-  h1 {
-    position: absolute;
-    z-index: 3;
-  }
+  font-size: 3rem;
 
-  .container {
-    position: absolute;
-    z-index: 1;
-    // text-align: center;
-    height: 20rem;
-    width: 20rem;
-
-    font-family: "Montserrat", helvetica, arial, sans-serif;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 3rem;
-    border-radius: 50%;
-    // @media screen and (max-width: 900px) {
-    //   font-size: 5rem;
-    // }
-    // @media screen and (max-width: 420px) {
-    //   font-size: 4rem;
-    // }
-    color: #e9e9e9;
-
-    background: #e5143c;
-
-    :hover {
-      cursor: pointer;
-    }
-  }
+  // @media screen and (max-width: 900px) {
+  //   font-size: 5rem;
+  // }
+  // @media screen and (max-width: 420px) {
+  //   font-size: 4rem;
+  // }
 }
 
 // font-family: 'Lora', Georgia, times, serif;
